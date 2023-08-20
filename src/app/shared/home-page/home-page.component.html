@@ -1,0 +1,35 @@
+<h1>Weather App</h1>
+<h2>Search Your City!</h2>
+<div class="search-container">
+    <form [formGroup]="inputData" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="search"/>
+        <button class="search-btn" type="submit">Search</button>
+    </form>
+    <div *ngIf="typo">
+        <p class="user-alarm">Matched Closest Result (Check City Spelling)</p>
+    </div>
+    <div *ngIf="error">
+        <p class="user-alarm">Unable to Match City</p>
+    </div>
+</div>
+<div class="country-container" *ngIf="dataAPI">
+    <div class="info-text">Country Initial: {{checkAPI.country}}</div>
+    <div class="info-text">Capital: {{checkAPI.is_capital}}</div>
+    <div class="info-text">Latitude: {{dataAPI.coord.lat}}, Longitude: {{dataAPI.coord.lon}}</div>
+    <div class="info-text">Population: {{checkAPI.population}} people</div>
+    <div class="info-text">Timezone: {{(dataAPI.timezone / 3600)}} UTC</div>
+</div>
+<div class="weather-container" *ngIf="dataAPI">
+    <div class="info-text">Weather: {{dataAPI.weather[0].description }}</div>
+    <div class="info-text">Temperature: {{(dataAPI.main.temp - 273.15).toFixed(2)}}°C</div>
+    <div class="info-text">Feels like: {{(dataAPI.main.feels_like - 273.15).toFixed(2)}}°C</div>
+    <div class="info-text">Humidity: {{dataAPI.main.humidity}}%</div>
+    <div class="info-text">Wind Speed: {{dataAPI.wind.speed}}, Wind Degree: {{dataAPI.wind.deg}}</div>
+    <div class="info-text">Clouds: {{dataAPI.clouds.all}}%</div>
+</div>
+
+
+
+
+
+
