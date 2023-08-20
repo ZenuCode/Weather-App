@@ -1,5 +1,22 @@
 # WeatherApp
 
+# Description
+## API Used
+- Weather App API
+- City Information API
+
+## Search Bar
+- Search Bar checks typos and if country input is valid
+- If close typo (Ex. Londan for London) it will autocorrect and alert user about this information.
+
+## Display Information
+- Displays Country Information with Flag
+- Displays Weather Information with Weather Image
+
+<img width="1279" alt="WA1" src="https://github.com/ZenuCode/Weather-App/assets/100235605/ff11ff44-4a06-4da9-94f1-790af22c4b04">
+<img width="1279" alt="WA2" src="https://github.com/ZenuCode/Weather-App/assets/100235605/a3a8d884-1d8f-42b9-b39b-39ee14b754ef">
+<img width="1279" alt="WA3" src="https://github.com/ZenuCode/Weather-App/assets/100235605/fb50efbe-7362-4c37-ad1e-718e12b54e70">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 ## Development server
