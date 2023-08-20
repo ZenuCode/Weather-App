@@ -1,0 +1,73 @@
+.title {
+    font: 30px;
+    text-align: center;
+    font-family: Sans-Serif;
+    color: white;
+}
+
+.small-title {
+    font: 20px;
+    text-align: center;
+    font-family: Sans-Serif;
+    color: white;
+}
+
+.form-design {
+    font: 30px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Sans-Serif;
+    color: white;
+}
+
+.input-box {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Sans-Serif;
+}
+
+.search-btn {
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Sans-Serif;
+}
+
+.gap-box {
+    height: 50px;
+    width: 100%;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    font-family: Sans-Serif;
+    color: white;
+}
+
+.box-title {
+    font: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.image {
+    width: 100px;
+}
+
+.country-container, .weather-container {
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    font-family: Sans-Serif;
+    color: white;
+}
+
+
