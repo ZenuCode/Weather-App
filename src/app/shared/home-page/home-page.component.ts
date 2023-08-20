@@ -14,6 +14,8 @@ export class HomePageComponent {
   typo = false;
   checkAPI!: checkData;
   dataAPI!: fullData;
+  emptyCheck!: checkData;
+  emptyData!: fullData;
 
   constructor(private service: APIService) {}
 
@@ -42,6 +44,8 @@ export class HomePageComponent {
             console.log("Typo?");
           }}, (err) => {
             this.error = true;
+            this.checkAPI = this.emptyCheck;
+            this.dataAPI = this.emptyData;
             console.log("Error");
         });
       });

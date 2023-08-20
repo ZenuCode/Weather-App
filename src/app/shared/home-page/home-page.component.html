@@ -5,10 +5,10 @@
         <input class="input-box" type="text" formControlName="search"/>
         <button class="search-btn" type="submit">Search</button>
     </form>
-    <div *ngIf="typo">
+    <div class="error-info" *ngIf="typo">
         <p class="user-alarm">Matched Closest Result (Check City Spelling)</p>
     </div>
-    <div *ngIf="error">
+    <div class="error-info" *ngIf="error">
         <p class="user-alarm">Unable to Match City</p>
     </div>
 </div>
